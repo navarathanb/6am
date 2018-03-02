@@ -1,0 +1,136 @@
+*{
+    margin:0px;padding:0px;
+}
+.main{
+    width:1000px;height:auto;
+    margin:0px auto;
+}
+.main .head{
+    width:1000px;height:100px;
+}
+.main .menu{
+    width:1000px;height:40px;background: #22e943;
+}
+.main .slider{
+    width:1000px;height:400px;background: #e6e922;
+}
+.main .content{
+    width:1000px;height:670px;background: #dddddd;
+}
+.main .footer{
+    width:1000px;height:100px;background: #2b2323;
+}
+.head .logo{
+    width:100px;height:100px;float: left;
+}
+.head .title{
+    float: left;margin-top:30px;color: #137dc1;
+}
+.head .icon{
+    width:40px;height:40px;float: right;margin-top:30px;margin-right:5px;
+}
+.head .icon:hover{
+    border:2px solid gray;width:36px;height:36px;border-radius: 5px;
+}
+.menu .nav{
+    list-style: none;
+}
+.menu .nav li{
+    float: left;background:#137dc1;width:194px;height:40px;margin-left:5px;
+    text-align: center;line-height: 40px;
+}
+.menu .nav li a{
+    text-decoration: none;color:white;
+}
+.menu .nav li:hover{
+    background: orange;font-size:18px;
+}
+.content .left{
+    width:250px;height:670px;background:#ffffff;float: left;
+}
+.content .right{
+    width:750px;height:670px;background: rgb(236, 240, 237);float: left;
+}
+.left .leftmenu{
+    height:212px;width:250px;
+}
+.left .nav{
+    list-style: none;
+}
+.left .nav li{
+    float: left;background:#137dc1;width:100%;height:40px;
+    text-align: center;line-height: 40px;margin-bottom: 2px;
+}
+.left .nav li a{
+    text-decoration: none;color:white;
+}
+.left .nav li:hover{
+    background: orange;font-size:18px;
+}
+
+.left .contact{
+    height:188px;width:250px;
+}
+.left .contact img{
+    width:250px;height:188px;
+}
+.right .service{
+    width:360px;
+    height:320px;
+    background:white;
+    float: left;
+    margin-left:10px;
+    margin-top:10px;
+}
+.service .serviceImg{
+    width:250px;
+    margin:5px 55px;
+    height:150px;
+}
+.service .title{
+    text-align: center;
+    margin-top:10px;
+}
+.service .desc{
+    text-align: justify;
+    margin:10px;
+    
+    height:75px;
+    overflow: hidden;
+}
+.service .read{
+    text-decoration: none;
+    margin-left:10px;
+    background: orange;
+    color:white;
+    padding:5px 10px;
+}
+.footer .footermenu{
+    height:50px;
+
+}
+.footer .copy{
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+}
+.footermenu .nav{
+    list-style: none;
+    width: 332px;
+    height: 50px;
+    margin: 0px auto;
+}
+.footermenu .nav li{
+    float: left;
+    line-height: 50px;
+    margin-left:10px;
+
+}
+.footermenu .nav li a{
+    color:lightgray;
+    text-decoration: none;
+}
+.copy a{
+text-decoration: none;
+color:lightgray;
+}
