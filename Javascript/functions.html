@@ -1,0 +1,26 @@
+<script>
+    function disp(){//implementation of a function
+        var val1 = prompt("Enter value1");// = asignment operator
+            var val2 = prompt("Enter value2");// = asignment operator
+            var val3 = prompt("Enter operator +,-,*,/");
+            var res ;
+            if(val3=='+')
+            {
+               res = parseInt(val1)+parseInt(val2);
+               document.write("Sum of two values : " +res);
+            }
+            else if(val3=='-'){
+                res = parseInt(val1)-parseInt(val2);
+               document.write("sub of two values : " +res);
+            }
+            else if(val3=='*'){
+                res = val1*val2;
+               document.write("mul of two values : " +res);
+            }else{
+                res = val1/val2;
+               document.write("div of two values : " +res);
+            }
+    }
+
+   disp();//calling the function
+</script>
