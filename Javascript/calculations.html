@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            function cal(opr){
+                var val1 = document.getElementById("val1").value;
+                var val2 = document.getElementById("val2").value;
+                var val3;
+                if(opr=='sum'){
+                    val3 = parseInt(val1)+parseInt(val2);
+                    document.getElementById("result").innerHTML = val1+" + "+val2+ " = "+ val3;
+                }
+                else if(opr == 'mul'){
+                    val3 = val1*val2;
+                    document.getElementById("result").innerHTML = val1+" * "+val2+ " = "+ val3;
+                }
+                
+                else if(opr == 'div'){
+                    val3 = val1/val2;
+                    document.getElementById("result").innerHTML = val1+" / "+val2+ " = "+ val3;
+                }
+                else{
+                    val3 = val1-val2;
+                    console.log(val1+" - "+val2+ " = "+ val3);
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        Val1 : <input type="text" id="val1" value="">
+        val2 : <input type="text" id="val2">
+        <input type="submit" value="sum" onclick="cal(this.value)">
+        <input type="submit" value="mul" onclick="cal(this.value)">
+        <input type="submit" value="div" onclick="cal('div')">
+        <input type="submit" value="sub" onclick="cal('sub')">
+        <h4 id="result"></h4>
+    </body>
+</html>

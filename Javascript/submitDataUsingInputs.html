@@ -1,12 +1,19 @@
 <html>
     <head>
         <script>
-            
+            function disp(){
+                var name = document.getElementById("name").value;
+                document.getElementById("res").innerHTML = name;
+                document.getElementById("test").value = name;
+            }
+          
         </script>
     </head>
     <body>
-        Name : <input type="text" id="name" name="name">
+        Name : <input type="text" id="name" name="name" value="">
         <br>
-        <input type="submit" value="submit">
+        <input type="submit" value="submit" onclick="disp();">
+        <h2 id="res"></h2>
+        <input type="text" id="test" value="">
     </body>
 </html>

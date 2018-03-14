@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            .root{
+                width:133px;height:auto;margin:0px auto;
+            }
+            .op{
+                width:131px;height:35px;margin-bottom: 3px;font-size:18px;
+            }
+            .btn{
+                width:30px;height:30px;margin-bottom: 3px;
+            }
+        </style>
+        <script>
+            function calculater(val){
+                
+                //"1+2"=3
+                if(val!='=')
+                {
+                    document.getElementById("op").value +=  val;// "1"+2 ="12"
+                     //x += Y    
+                }
+                else{
+                    document.getElementById("op").value = eval(document.getElementById("op").value);
+                }
+            }
+            function clr(){
+                document.getElementById("op").value = '';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="root">
+            <input type="text" id="op" class="op">
+            <br>
+            <input type="submit" value="1" class="btn" onclick="calculater(1)">
+            <input type="submit" value="2" class="btn" onclick="calculater(2)">
+            <input type="submit" value="3" class="btn" onclick="calculater(3)">
+            <input type="submit" value="+" class="btn" onclick="calculater('+')">
+            <br>
+            <input type="submit" value="4" class="btn" onclick="calculater(4)">
+            <input type="submit" value="5" class="btn" onclick="calculater(5)">
+            <input type="submit" value="6" class="btn" onclick="calculater(6)">
+            <input type="submit" value="-" class="btn" onclick="calculater('-')">
+            <br>
+            <input type="submit" value="7" class="btn" onclick="calculater(7)">
+            <input type="submit" value="8" class="btn" onclick="calculater(8)">
+            <input type="submit" value="9" class="btn" onclick="calculater(9)">
+            <input type="submit" value="/" class="btn" onclick="calculater('/')">
+            <br>
+            <input type="submit" value="0" class="btn" onclick="calculater(0)">
+            <input type="submit" value="c" class="btn" onclick="clr()">
+            <input type="submit" value="=" class="btn" onclick="calculater('=')">
+            <input type="submit" value="*" class="btn" onclick="calculater('*')">
+        </div>
+    </body>
+</html>
