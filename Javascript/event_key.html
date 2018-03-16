@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function disp(val){
+            if(val.length >=30){
+                document.getElementById("res").innerHTML = "Overflow";
+            }
+            else{
+            document.getElementById("res").innerHTML = val.length;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--
+        keyup, keydown and keypress
+     -->
+    <textarea name="" id="data" cols="30" rows="10" onkeyup="disp(this.value)" ></textarea>
+    <span id="res"></span>
+
+</body>
+</html>

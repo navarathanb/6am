@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            #data{
+                width:300px;height:250px;border:2px solid gray;margin-top:10px;
+                padding:10px;text-align: justify;
+            }
+        </style>
+        <script>
+            function disp(val){
+                //var state = document.getElementById("state").value;
+              //  alert(val);
+              if(val=='AP State'){
+                  document.getElementById("data").innerHTML = "Andhra Pradesh is a state bordering India’s southeastern coast. Major cultural landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. It’s visited by tens of millions of pilgrims annually. The major northern port of Visakhapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal, offering spots for swimming and surfing.";
+              }
+              else if(val=='UP State'){
+                document.getElementById("data").innerHTML = "Uttar Pradesh is a state bordering India’s southeastern coast. Major cultural landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. It’s visited by tens of millions of pilgrims annually. The major northern port of Visakhapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal.";
+              }
+              
+              else if(val=='MP State'){
+                document.getElementById("data").innerHTML = "Madhya Pradesh is a state bordering India’s southeastern coast. Major cultural landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, The major northern port of Visakhapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal in the southern part of the state. It’s visited by tens of millions of pilgrims annually. .";
+              }
+              else{
+                  document.getElementById("data").innerHTML="Please select any state";
+              }
+
+            }
+        </script>
+    </head>
+    <body>
+
+        <select name="" id="state" onchange="disp(this.value)">
+            <option>Select State</option>
+            <option>AP State</option>
+            <option>UP State</option>
+            <option>MP State</option>
+        </select>
+        <div id="data">
+
+        </div>
+    </body>
+</html>

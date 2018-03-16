@@ -27,6 +27,9 @@
             function clr(){
                 document.getElementById("op").value = '';
             }
+            function cls(){
+                window.close();
+            }
         </script>
     </head>
     <body>
@@ -52,6 +55,8 @@
             <input type="submit" value="c" class="btn" onclick="clr()">
             <input type="submit" value="=" class="btn" onclick="calculater('=')">
             <input type="submit" value="*" class="btn" onclick="calculater('*')">
+            <br>
+            <input type="submit" value="X" class="btn" onclick="cls()">
         </div>
     </body>
 </html>

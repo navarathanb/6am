@@ -1,0 +1,18 @@
+
+<head>
+    <style>
+        #data{
+            width:300px;height:200px;background: red;
+        }
+    </style>
+    <script>
+        function disp(){
+            document.getElementById("data").style.background = "green";
+            document.getElementById("data").style.width=500+'px';
+            document.getElementById("data").style.marginLeft = '200px';
+        }
+    </script>
+</head>
+<body>
+    <div id="data" onclick="disp()"></div>
+</body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #data{
+            width:100px;height:100px;background: red;text-align: justify;color:white;
+        }
+    </style>
+   <script>
+       var i=100;
+      // var height;
+      // var width;
+       function disp(){
+      // to get div height - document.getElementById("data").offsetHeight;
+      // width = document.getElementById("data").offsetHeight;
+      //height = document.getElementById("data").offsetWidth;
+        document.getElementById("data").style.width =i+'px'; 
+        document.getElementById("data").style.height = i+'px';
+        document.getElementById("data").style.borderRadius = i+'px';
+
+        i = i+10;
+        if(i>=300){
+            i=100;
+        }
+       }
+      setInterval("disp()",100)
+   </script>
+
+</head>
+<body>
+    <div id="data" ></div>
+</body>
+</html>

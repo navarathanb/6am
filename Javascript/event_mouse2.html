@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #data{
+            width:300px;height:100px;background: red;text-align: justify;color:white;
+        }
+    </style>
+   <script>
+       function disp(val){
+        //    alert("Testing");
+        if(val=='down'){
+            document.getElementById("data").style.background = "green";
+            document.getElementById("data").style.height = 'auto';
+            document.getElementById("data").style.padding = '10px';
+            document.getElementById("data").innerHTML = "Andhra Pradesh is a state bordering India’s southeastern coast. Major cultural landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. It’s visited by tens of millions of pilgrims annually. The major northern port of Visakhapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal, offering spots for ";
+        }
+        else{
+            document.getElementById("data").style.background = "red";
+            document.getElementById("data").style.height = '100px';
+            document.getElementById("data").innerHTML = "Andhra Pradesh is a state bordering India’s southeastern coast. Read more....";
+        }
+        
+       }
+   </script>
+
+</head>
+<body>
+    <div id="data" onmousedown="disp('down')" onmouseup="disp('up')"></div>
+</body>
+</html>
