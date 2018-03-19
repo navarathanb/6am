@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            var arr = new Array("james","vimal","Kishore","Patrick");
+            //var arr = ["james","vimal","Kishore","Patrick"]; object literal or short form of an array
+            document.write("array : "+arr+"<br>");
+            document.write("<select><option>Select Name</option>");
+            for(i=0;i<arr.length;i++){
+
+                document.write("<option>"+arr[i]+"</option>");
+            }
+            document.write("</select>");
+            document.write("array Length : "+arr.length+"<br>");
+            //join() to convert array to string.
+            var str = arr.join(" ");
+            document.write("String : "+str+"<br>");
+            document.write("String Length : "+str.length);
+        </script>
+    </head>
+</html>

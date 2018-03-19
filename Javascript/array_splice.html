@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+             var arr = new Array("james","vimal","Kishore","Patrick");
+            
+             function disp(val){
+                var name = document.getElementById("name").value;
+                var index = document.getElementById("loc").value;
+                if(val=='ins'){
+                    arr.splice(index,1,name);//to insert or delete into an array
+                //index  - position where value to be insert, 1 - no of values to be delete, name - value to be insert at index place
+                document.getElementById("res").innerHTML = arr;
+                }
+                else{
+                    arr.splice(index,1);
+                    document.getElementById("res").innerHTML = arr;
+                }
+               
+             }
+        </script>
+    </head>
+    <body>
+            Name : <input type="text" id="name">
+            Location : <input type="text" id="loc">
+            <input type="submit" value="insert" onclick="disp('ins')">
+            <input type="submit" value="delete" onclick="disp('del')">
+           <br>
+           <br>
+            <div id="arr">
+             </div>
+             <div id="res"></div>
+             <script>
+                 document.getElementById("arr").innerHTML = "Array : " +arr;
+             </script>
+            
+
+    </body>
+</html>

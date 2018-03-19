@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #slider{
+            width:1000px;height:400px;background: gray;margin:0px auto;
+        }
+        #slider img{
+            width:1000px;height:400px;
+        }
+    </style>
+    <script>
+        var i = 0;
+        var start;
+        function disp(){
+                var names = ["img/s2.jpg","img/s3.jpg","img/s1.jpg","img/s4.jpg","img/s5.jpg"];
+                document.image.src=names[i];
+                i++;
+                if(i>=names.length){
+                    i=0;
+                }
+            
+            }
+
+        function startLogic(){
+           
+            start = setInterval("disp()",2000);
+
+        }
+        function stopLogic(){
+            clearInterval(start);
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="slider" onmouseover="startLogic()" onmouseout="stopLogic()">
+        <img src="img/s1.jpg" alt="" name="image">
+    </div>
+    
+    
+</body>
+</html>

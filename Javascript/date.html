@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script>
+            var date = new Date();
+            document.write(date+"<br>");
+            document.write("Year : "+date.getFullYear()+"<br>");
+            var month = date.getMonth()+1;
+            document.write("Month : "+month+"<br>");//0-11
+            document.write("date : "+date.getDate()+"<br>");//0-11
+            var day = date.getDay();//0-6
+            switch(day){
+                case 0:
+                document.write("Day is: Sunday"+"<br>");
+                break;
+                
+                case 1:
+                document.write("Day is: Monday"+"<br>");
+                break;
+               
+                case 2:
+                document.write("Day is: Tuesday"+"<br>");
+                break;
+                
+                case 3:
+                document.write("Day is: Wednesday"+"<br>");
+                break;
+                
+                case 4:
+                document.write("Day is: Thursday"+"<br>");
+                break;
+               
+                case 5:
+                document.write("Day is: Friday"+"<br>");
+                break;
+
+                default:
+                document.write("Day is: Saturday"+"<br>");
+                break;
+
+            }
+           document.write("Hours : "+date.getHours()+"<br>");
+           document.write("minutes : "+date.getMinutes()+"<br>");
+           document.write("Seconds : "+date.getSeconds()+"<br>");
+           document.write("Time : "+date.getTime()+"<br>");
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

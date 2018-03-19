@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function disp(){
+                var date = new Date();
+                var month = date.getMonth()+1;
+                var h = date.getHours();
+                if(h<=12){
+                    var time = "AM";
+                }
+                else{
+                    var time = "PM";
+                }
+                if(h>12){
+                    var hours = h-12;
+                }
+                else{
+                    var hours = h;
+                }
+                document.getElementById("time").innerHTML = date.getDate()+" - "+month+" - "+date.getFullYear()+" "+hours+" "+time+" : "+date.getMinutes()+" : "+date.getSeconds();
+            }
+            setInterval("disp()",1000);
+        </script>
+    </head>
+    <body>
+        <div id="time"></div>
+
+    </body>
+</html>

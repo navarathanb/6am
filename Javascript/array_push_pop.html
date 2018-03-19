@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            var arr = new Array("james","vimal","Kishore","Patrick");
+           function disp(val)
+           {
+               var name = document.getElementById("name").value;
+               document.getElementById("res1").innerHTML = "Before Insertion : " +arr;
+               if(val=='push'){
+                arr.push(name);//to insert the value at last position of an array
+               document.getElementById("res2").innerHTML = "After Insertion : "+ arr;
+               }
+               else if(val=='unshift'){
+                   arr.unshift(name);//to insert value at first position
+                   document.getElementById("res2").innerHTML = "After Insertion : "+arr
+               }
+               else if(val=='pop'){
+                   arr.pop();//to remove last value from an array
+                   document.getElementById("res2").innerHTML = "After Deletion : "+arr;
+               }
+               else{
+                    arr.shift();//to remove first value from an array
+                   document.getElementById("res2").innerHTML = "After Deletion : "+arr;
+               }
+             
+           }
+        </script>
+    </head>
+    <body>
+        Name : <input type="text" id="name">
+        <input type="submit" value="Push" onclick="disp('push')">
+        <input type="submit" value="unshift" onclick="disp('unshift')">
+        <input type="submit" value="pop" onclick="disp('pop')">
+        <input type="submit" value="shift" onclick="disp('shift')">
+        <div id="res1"></div>
+        <div id="res2"></div>
+    </body>
+</html>
