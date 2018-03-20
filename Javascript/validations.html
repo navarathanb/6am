@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="validations.js"></script>
+    </head>
+    <body>
+        <div id="error" style="color:red;"></div>
+        <form action="test.html" method="get" name="registrationForm">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" id="pwd" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input type="text" id="mobile" name="mobile"></td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td><textarea id="msg" name="msg" rows="5" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        Male <input type="radio" id="male" name="gender" value="male"><!-- checked-->
+                        Female <input type="radio" id="female" name="gender" value="female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        Cricket <input type="checkbox" id="crik" name="crik" value="cricket">
+                        Carroms <input type="checkbox" id="carm" name="carm" value="carroms">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>State</td>
+                    <td>
+                        <select name="state" id="state">
+                            <option>select state</option>
+                            <option>AP</option>
+                            <option>TS</option>
+                            <option>UP</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="submit" onclick="return validate()"></td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
