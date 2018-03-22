@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+        .box{
+            width:300px;height:200px;background: red;
+        }
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+         $(document).ready(function(){
+             $("#btn1").click(function(){
+                 $("img").fadeToggle(1000);
+                
+             })
+             
+           
+
+         })
+        </script>
+    </head>
+    <body>
+       
+        <input type="submit" value="fadeToggle" id="btn1">
+        
+        <br>
+        <br>
+        <img src="img/1.jpg" class="box">
+    </body>
+</html>

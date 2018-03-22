@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+        .box{
+            width:300px;height:200px;background: red;
+        }
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+         $(document).ready(function(){
+            $("input").click(function(){
+                $("img").toggle(1000);
+            })
+
+         })
+        </script>
+    </head>
+    <body>
+       
+        
+        <input type="submit" value="Toggle" id="btn2" >
+        <br>
+        <br>
+        <img src="img/1.jpg" class="box">
+    </body>
+</html>

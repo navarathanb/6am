@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+        .box{
+            width:300px;height:200px;background: red;
+            /* opacity: 0.2; */
+        }
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+         $(document).ready(function(){
+             $("#btn1").click(function(){
+                 $("img").fadeOut(2000);
+                 $("#btn2").show();
+                 $("#btn1").hide();
+             })
+             
+             $("#btn2").click(function(){
+                 $("img").fadeIn(2000);
+                 $("#btn2").hide();
+                 $("#btn1").show();
+             })
+
+         })
+        </script>
+    </head>
+    <body>
+       
+        <input type="submit" value="fadeOut" id="btn1">
+        <input type="submit" value="fadeIn" id="btn2" style="display:none;">
+        <br>
+        <br>
+        <img src="img/1.jpg" class="box">
+    </body>
+</html>
