@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            *{margin:0px;padding:0px;}
+            #slider{
+                width:1000px;height:400px;background: gray;margin:0px auto;position: relative;
+                overflow: hidden;
+            }
+           .prev,.next{
+               color:white;font-size: 20px;background: #1c64c4;padding:15px;text-decoration: none;
+               position: absolute;top:180px;z-index: 1;
+           }
+            .next{
+                right:0px;
+           } 
+           #slider ul{
+               list-style: none;position: relative;
+               
+           }
+           #slider ul li{
+            width:1000px;height:400px;float: left;
+           }
+           #slider li img{
+            width:1000px;height:400px;
+           }
+
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+           
+            $(document).ready(function(){
+              var liwidth = $("#slider ul li").width();//1000
+              //var liheight = $(#slider ul li).height();//400
+               var licount = $("#slider ul li").length;//5
+               var ulwidth = liwidth * licount; //1000*5 = 5000
+
+                $("#slider ul").css({width:ulwidth,marginLeft:-liwidth});
+
+                $(".prev").click(function(){
+                    // alert("test");
+                    $("#slider ul").animate({left:liwidth},1000,function(){
+                        $("#slider ul li:last-child").prependTo("#slider ul");
+                        $("#slider ul").css("left","");
+                    });
+                    
+                })
+
+                $(".next").click(function(){
+                    $("#slider ul").animate({left:-liwidth},1000,function(){
+                        $("#slider ul li:first-child").appendTo("#slider ul");
+                        $("#slider ul").css("left","");
+                    });
+                })
+
+            })
+        </script>
+    </head>
+    <body>
+        <div id="slider">
+          <a href="#" class="prev"><</a>    
+          <a href="#" class="next">></a> 
+          <ul>
+              <li><img src="img/s1.jpg" class="img" alt=""></li>
+              <li><img src="img/s2.jpg" class="img" alt=""></li>
+              <li><img src="img/s3.jpg" class="img" alt=""></li>
+              <li><img src="img/s4.jpg" class="img" alt=""></li>
+              <li><img src="img/s5.jpg" class="img" alt=""></li>
+          </ul>
+        </div>
+       
+       
+    </body>
+</html>

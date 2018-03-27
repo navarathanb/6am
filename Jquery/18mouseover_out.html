@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            #txt{
+                width:100px;height:100px;border:2px solid red;position:relative;float: left;
+            }
+           
+            .box{
+                width:100px;height:100px;background: green;position:relative;float: left;margin-left:5px;
+            }
+           
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+            var i=1;
+            $(document).ready(function(){
+                $("#txt").mouseover(function(){
+                    $("#txt").after("<div class='box'></div>");
+                    $(".box").hide(2000);
+                    $(".box").show(2000);
+
+                })
+                $("#txt").mouseout(function(){
+                    $("#txt").after("<div class='box'></div>");
+                    $(".box").hide(2000);
+                    $(".box").show(2000);
+                })
+
+
+            })
+        </script>
+    </head>
+    <body>
+        <div id="txt">
+          
+
+        </div>
+       
+       
+    </body>
+</html>

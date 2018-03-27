@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            #root{
+                width:420px;height:auto;border:2px solid red;padding:10px;
+            }
+            .box1{
+                width:400px;height:auto;border:2px solid green;padding:10px;margin-bottom:10px;
+            }
+           
+            .box2{
+                width:400px;height:auto;border:2px solid green;padding:10px;
+            }
+           
+
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+           
+            $(document).ready(function(){
+             $("#root").click(function(){
+                    $(".box1 p").parentsUntil("body").css("background","orange");
+                  
+                    $(".box1 p").parentsUntil("body").animate({borderRadius:'20px'},1000);
+                   
+             })
+            })
+        </script>
+    </head>
+    <body>
+        
+        <div id="root">
+          <div class="box1">
+              <p>paragraph - 1</p>
+              <p>paragraph - 2</p>
+              <p>paragraph - 3</p>
+              <p>paragraph - 4</p>
+              <p>paragraph - 5</p>
+          </div>
+          
+          <div class="box2">
+              <p>paragraph - 6</p>
+              <p>paragraph - 7</p>
+              <p>paragraph - 8</p>
+              <p>paragraph - 9</p>
+             
+          </div>
+
+        </div>
+       
+       
+    </body>
+</html>

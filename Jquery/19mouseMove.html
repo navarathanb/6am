@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            #txt{
+                width:0px;height:0px;
+            }
+           
+            .box{
+                width:0px;height:0px;background: green;position:relative;float: left;margin-left:5px;
+            }
+           
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+            var i=1;
+            $(document).ready(function(){
+               $(document).mousemove(function(){
+                $("#txt").after("<div class='box'></div>");
+                    $(".box").animate({width:'100px',height:'100px',borderRadius:'100px'},2000)
+                    $(".box").hide(2000);
+                    $(".box").show(2000);
+               })
+
+
+            })
+        </script>
+    </head>
+    <body>
+        <div id="txt">
+          
+
+        </div>
+       
+       
+    </body>
+</html>

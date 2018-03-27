@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            #txt{
+                width:200px;height:200px;border:2px solid red;
+            }
+            img{
+                width:150px;height:150px;margin:25px;
+            }
+            .box{
+                width:220px;height:220px;border:2px solid green;padding:10px;
+            }
+        </style>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+            var i=1;
+            $(document).ready(function(){
+              $("#txt").click(function(){
+                // $("#txt").appendTo(".box");//replace #txt content into .box after the existing content
+                 $("#txt").prependTo(".box");//replace #txt content into .box before the existing conent
+              })
+            })
+        </script>
+    </head>
+    <body>
+        <div id="txt">
+            <img src="img/1.jpg">
+
+        </div>
+        <div class="box">
+            Test
+        </div>
+       
+    </body>
+</html>
