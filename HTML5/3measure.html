@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var i=1;
+        function disp(){
+            if(i<100){
+                document.getElementById("data").value = i;
+            document.getElementById("res").innerHTML = i;
+            i++;
+            }
+           else{
+            document.getElementById("data").value = 100;
+            document.getElementById("res").innerHTML = "100% Successfully Completed";
+           }
+        }
+        setInterval("disp()",100)
+    </script>
+</head>
+<body>
+    <meter value="10" min="0" max="100"></meter>
+    <progress value="1" min="0" max="100" id="data"></progress>
+   
+    <span id="res">
+
+    </span>
+    <script>
+            var data = document.getElementById("data").value;
+            document.getElementById("res").innerHTML = data;
+     </script>
+</body>
+</html>

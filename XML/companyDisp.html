@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function disp(){
+                var xml;
+            if(window.XMLHttpRequest){
+                xml = new XMLHttpRequest();
+            }
+            else{
+                xml = new ActiveXObject("microsoft.XMLHTTP");
+            }
+            xml.open("GET","company.xml",false);
+            xml.send();
+            var data = xml.responseXML;
+            var companies = data.getElementsByTagName("company");//<company>
+            var res = '';
+            for(i=0;i<companies.length;i++){
+                var place = companies[i].getElementsByTagName("place")[0].childNodes[0].nodeValue;
+                var company = companies[i].getAttribute("name");
+                var tel =  companies[i].getElementsByTagName("tel")[0].childNodes[0].nodeValue;
+                var address =  companies[i].getElementsByTagName("address")[0].childNodes[0].nodeValue;
+               res += place+" , "+company+" , "+tel+" , "+address+"<br>";
+            }
+            document.getElementById("res").innerHTML = res;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="submit" value="Records" onclick="disp()">
+        <div id="res"></div>
+    </body>
+</html>

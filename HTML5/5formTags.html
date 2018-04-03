@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function disp(val){
+            document.getElementById("range").innerHTML = val;
+        }
+    </script>
+</head>
+<body>
+    <form action="test.html" method="get">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name" name="name" placeholder="enter name" required pattern="[a-z]{5,10}" title="please enter small characters only and min 5 and max 10"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="name" name="name" placeholder="enter name" required></td>
+            </tr>
+            
+            <tr>
+                <td>Mobile</td>
+                <td><input type="tel" id="name" name="name" placeholder="enter name" required pattern="[0-9]"></td>
+            </tr>
+            
+            <tr>
+                <td>search</td>
+                <td><input type="search" id="name" name="name" placeholder="enter name" required pattern="[0-9]"></td>
+            </tr>
+            
+            <tr>
+                <td>URL</td>
+                <td><input type="url" id="name" name="name" placeholder="enter name" required pattern="[0-9]"></td>
+            </tr>
+            
+            <tr>
+                <td>range</td>
+                <td><input type="range" value="5" step="2" id="name" name="name" min="0" max="10" onmousemove="disp(this.value)">
+                <span id="range"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>clorl</td>
+                <td><input type="color" value="#323223" id="name" name="name" placeholder="enter name" required pattern="[0-9]"></td>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td><input type="number" min="1" max="10" id="name" name="name" placeholder="enter name" required pattern="[0-9]"></td>
+            </tr>
+            
+            <tr>
+                <td>Food</td>
+                <td>
+                    <select name="" id="" multiple>
+                        <option value="">Select Food</option>
+                        <optgroup label="rice">
+                            <option value="">White Rice</option>
+                            <option value="">Yellow Rice</option>
+                            <option value="">Brown Rice</option>
+                        </optgroup>
+                        <option value="">Yellow Dal</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Food</td>
+                <td>
+                    <input type="text" id="search" list="data">
+                    <datalist id="data" name="" id="" >
+                        <option >Select Food</option>
+                        <option >White Rice</option>
+                        <option >Yellow Rice</option>
+                        <option >Brown Rice</option>
+                        <option >Yellow Dal</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="date"></td>
+            </tr>
+            
+            <tr>
+                <td>Month</td>
+                <td><input type="month"></td>
+            </tr>
+            <tr>
+                <td>Week</td>
+                <td><input type="week"></td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td><input type="time"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>

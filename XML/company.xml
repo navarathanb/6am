@@ -1,0 +1,24 @@
+<companies>
+    <company name="Maruthi">
+      <place>India</place>
+      <tel>0800345697</tel>
+      <address>Hyderabad</address>
+      
+    </company>
+    <company name="Benz">
+      <place>China</place>
+      <tel>09485885</tel>
+      <address>Beizing</address>
+    </company>
+    <company name="Audi">
+      <place>US</place>
+      <tel>48585858</tel>
+      <address>Chikago</address>
+    </company>
+    <company name="Hyudai">
+      <place>India</place>
+      <tel>86886886</tel>
+      <address>Bangalore</address>
+    </company>
+
+</companies>

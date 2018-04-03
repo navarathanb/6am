@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            // json : Javascript object notation.
+            // {} -  object
+            // [] - json or array
+            // () - function
+
+           var json = [{"name":"James","id":1,"email":"james@gmail.com","mobile":9586868686},{"name":"Vimal","id":2,"email":"vimal@gmail.com","mobile":34654757},{"name":"kishore","id":3,"email":"kishore@gmail.com","mobile":788797897},{"name":"suresh","id":4,"email":"suresh@gmail.com","mobile":896757534},{"name":"ravi","id":5,"email":"ravi@gmail.com","mobile":5767568678}];
+         
+            document.write("<table border='1' cellpadding='10' cellspacing='0'><tr><td>Name</td><td>ID</td><td>Email</td><td>Mobile</td></tr>");
+            for(i=0;i<json.length;i++){
+                document.write("<tr><td>"+json[i]["name"]+"</td><td>"+json[i]["id"]+"</td><td>"+json[i]["email"]+"</td><td>"+json[i]["mobile"]+"</td></tr>");
+            }
+            document.write("</table>");
+          
+        </script>
+    </head>
+</html>

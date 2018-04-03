@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <script>
+            //json : Javascript object notation.
+           var student = '{"name":"James","id":1,"email":"james@gmail.com","mobile":9586868686}';
+           document.write(student);
+           var json = JSON.parse(student);//to string to json
+           document.write(json["name"]);
+           document.write("<table border='1' cellpadding='10' cellspacing='0'><tr><td>Name</td><td>"+json["name"]+"</td></tr><tr><td>ID</td><td>"+json["id"]+"</td></tr><tr><td>EMail</td><td>"+json["email"]+"</td></tr><tr><td>Mobile</td><td>"+json["mobile"]+"</td></tr></table>");
+        </script>
+    </head>
+</html>

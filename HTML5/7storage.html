@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function disp(){
+            if(typeof(Storage)!==undefined)
+            {
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("pwd").value;
+                localStorage.setItem("emailData",email);
+                localStorage.setItem("pwdData",password);
+                
+                document.getElementById("result").innerHTML = "Email : "+localStorage.getItem("emailData")+"<br>Password : "+localStorage.getItem("pwdData");
+
+                document.getElementById("email").value = "";
+                document.getElementById("pwd").value = "";
+            }
+           
+        }
+        function logout(){
+            localStorage.removeItem("emailData");
+            localStorage.removeItem("pwdData");
+            // sessionStorage.removeItem("emailData");
+            document.getElementById("email").value = "";
+                document.getElementById("pwd").value = "";
+            document.getElementById("result").innerHTML = "Your session is expired. Please login again";   
+        }
+    </script>
+</head>
+<body>
+    <!-- html5 API
+        Storage 2:
+            1 local storage - to store permant data
+            2 session storage - to store upto browser will be open. If browser closed,then data will erased.
+    -->
+    Email : <input type="text" id="email" name="email">
+    <br>
+    <br>
+    password : <input type="password" id="pwd" name="pwd">
+    <br>
+    <br>
+    <input type="submit" value="submit" onclick="disp()">
+    <input type="submit" value="Logout" onclick="logout()">
+    <div id="result">
+
+    </div>
+    <script>
+        if(localStorage.getItem("emailData") && localStorage.getItem("pwdData")){
+            document.getElementById("result").innerHTML = "Email : "+localStorage.getItem("emailData")+"<br>Password : "+localStorage.getItem("pwdData");
+        }
+         else{
+             document.getElementById("result").innerHTML = "Your session is expired... Please login again";
+         }
+    </script>
+</body>
+</html>
