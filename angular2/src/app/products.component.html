@@ -1,0 +1,16 @@
+<h2>This is prodcts page</h2>
+<div>
+    <form>
+            Produc <input type="text" [(ngModel)] = "data.name" id="name" name="name">
+            <br>
+            CatID <input type="text" [(ngModel)] = "data.cat" id="cat" name="cat">
+            <div>
+                <input [value] = "email" (input) = "email = $event.target.value">
+                {{email}}
+             </div>
+            <h4></h4><input type="submit" value="change" (click) = "chnge()">
+    </form>
+    
+</div>
+
+

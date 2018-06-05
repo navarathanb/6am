@@ -1,0 +1,35 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2{
+  color:#07428f;
+}
+h3{
+  color:green;
+}
+.products{
+  width:1010px;height:auto;box-shadow: 0px 0px 10px gray;margin:0px auto;margin-top:20px;
+}
+.product{
+  width:330px;height:400px;box-shadow: 0px 0px 10px green;float: left;margin-left:5px;margin-top:5px;
+}
+.product img{
+  width:250px;display: block;margin:0px auto;
+}
+.product .title{
+  text-align: center;color:green;
+}
+.product .cost{
+  text-align: center;color:blue;
+}
+.product .cart{
+  display: block;width:180px;height:40px;text-align: center;line-height: 40px;color:white;background: orange;text-decoration: none;margin:0px auto;
+}
+.routers{
+  display: block;clear:both;
+}
+.routers a{
+  display: block;width:250px;height:40px;text-align: center;line-height: 40px;text-decoration: none;margin-bottom:5px;
+}
